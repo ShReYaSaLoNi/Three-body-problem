@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Three body problem</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <script src="js/three.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/main.js"></script>
+    <div id="inset"></div>
+    <div style="display:flex;">
+      <div style="background-color: black; color: azure;">
+        <div class="body-inputs">
+          <div class="body-inputs-label">
+            First body
+          </div>
+          <div class="body-input">
+            <label class="label" for="body1-mass">Mass (kg):</label>
+            <span class="input">
+              <input class="mass-input" type="text" id="body1-mass" value="10.0"> x 10^
+              <input class="mass-factor-input" type="text" id="body1-mass-factor" value="22">
+            </span>
+          </div>
+          <div class="body-input">
+            <label class="label" for="body1-mass">Initial Velocity (km/s, km/s, km/s):</label>
+            <input class="velocity-input" type="text" id="body1-velocity" value="(-2.521790993, -4.510649126, 3.426690471)">
+          </div>
+          <div class="body-input">
+            <label class="label" for="body1-mass">Position  (mm, mm, mm):</label>
+            <input class="input" type="text" id="body1-position" value="(1.111675544, 3.61995878, 15.15947379)">
+          </div>
+        </div>
+
+        <div class="body-inputs">
+          <div class="body-inputs-label">
+            Second body
+          </div>
+          <div class="body-input">
+            <label class="label" for="body1-mass">Mass (kg):</label>
+            <span class="input">
+              <input class="mass-input" type="text" id="body2-mass" value="20.0"> x 10^
+              <input class="mass-factor-input" type="text" id="body2-mass-factor" value="22">
+            </span>
+          </div>
+          <div class="body-input">
+            <label class="label" for="body1-mass">Initial Velocity (km/s, km/s, km/s):</label>
+            <input class="velocity-input" type="text" id="body2-velocity" value="(4.467213315, 2.853476138, -3.434030571)">
+          </div>
+          <div class="body-input">
+            <label class="label" for="body1-mass">Position (mm, mm, mm):</label>
+            <input class="input" type="text" id="body2-position" value="(4.907541724, 18.16374204, -3.502379802)">
+          </div>
+        </div>
+
+        <div class="body-inputs">
+          <div class="body-inputs-label">
+            Third body
+          </div>
+          <div class="body-input">
+            <label class="label" for="body1-mass">Mass (kg):</label>
+            <span class="input">
+              <input class="mass-input" type="text" id="body3-mass" value="30.0"> x 10^
+              <input class="mass-factor-input" type="text" id="body3-mass-factor" value="22">
+            </span>
+          </div>
+          <div class="body-input">
+            <label class="label" for="body1-mass">Initial Velocity (km/s, km/s, km/s):</label>
+            <input class="velocity-input" type="text" id="body3-velocity" value="(3.282167766, 1.404734298, -0.641227295)">
+          </div>
+          <div class="body-input">
+            <label class="label" for="body1-mass">Position  (mm, mm, mm):</label>
+            <input class="input" type="text" id="body3-position" value="(6.531307672, 1.318351532, 18.54651254)">
+          </div>
+        </div>
+        <div class="body-inputs">
+          <button class="button" onclick="simulate()">Simulate</button>
+        </div>
+      </div>
+      <div class="simulation-frame"></div>
+    </div>
+	</body>
+</html>

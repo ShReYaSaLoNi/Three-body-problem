@@ -1,0 +1,70 @@
+.body-inputs {
+	margin: 30px;
+	width: 375px;
+}
+
+.body-inputs-label {
+	text-align: left;
+	font-size: large;
+	font-weight: bold;
+}
+
+.body-input {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.label {
+	margin-right: 8px;
+}
+
+.input {
+	float:right;
+	background-color: transparent;
+	color: azure;
+}
+
+.mass-input {
+	width: 95px;
+	background-color: transparent;
+	color: azure;
+}
+
+.mass-factor-input {
+	width: 30px;
+	background-color: transparent;
+	color: azure;
+}
+
+.velocity-input {
+	width: 125px;
+	float:right;
+	background-color: transparent;
+	color: azure;
+}
+
+.button {
+	height: auto;
+	text-align: right;
+	display: inline;
+}
+
+.simulation-frame {
+	background-image: url(./space.jpg);
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+#inset {
+	width: 150px;
+	height: 150px;
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	z-index: 100;
+}
